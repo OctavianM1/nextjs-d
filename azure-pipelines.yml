@@ -24,6 +24,7 @@ steps:
   displayName: Archive Files
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)/.next'
+    includeRootFolder: false
     archiveFile: '$(Build.ArtifactStagingDirectory)/build.zip' 
 
 # - task: CopyFiles@2
