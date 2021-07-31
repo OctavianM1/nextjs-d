@@ -23,7 +23,7 @@ steps:
 - task: ArchiveFiles@2
   displayName: Archive Files
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/.next'
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
     archiveFile: '$(Build.ArtifactStagingDirectory)/build.zip' 
 
